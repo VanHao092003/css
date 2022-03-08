@@ -1,0 +1,163 @@
+.navbar {
+    background-color: rgb(151, 42, 42);
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    margin: auto 16px;
+    padding: 0;
+}
+
+.navbar-item {
+    list-style: none;
+    display: inline-block;
+    padding: 0 12px;
+    color: aliceblue;
+}
+
+
+/* form layout */
+
+.form-layout {
+    background-color: rgb(167, 140, 107);
+    width: 80%;
+    margin: 36px auto 0 auto;
+    padding: 23px;
+}
+
+.form__row {
+    padding: 12px 0;
+    display: flex;
+}
+
+.form_label {
+    min-width: 100px;
+}
+
+.form_input {
+    flex: 1;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    display: flex;
+    margin: 32px 0 20px 0;
+    justify-content: space-around;
+}
+
+.feature_item {
+    width: 28%;
+    padding: 12px;
+}
+
+.one {
+    background-color: aqua;
+}
+
+.two {
+    background-color: rgb(113, 80, 173);
+    color: aliceblue;
+}
+
+.three {
+    background-color: rgb(104, 214, 214);
+}
+
+
+/* wrap layout */
+
+.wrap_layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap_layout-item {
+    background-color: red;
+    margin: 15px auto 0 auto;
+    color: antiquewhite;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 40px;
+}
+
+.center-layout {
+    background-color: aquamarine;
+    width: auto;
+    height: 500px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.center {
+    margin: auto;
+    font-weight: 900;
+    font-size: 90px;
+}
+
+
+/* center layout */
+
+.chart-layout {
+    background-color: aliceblue;
+    display: flex;
+    margin-top: 32px;
+    text-align: center;
+    justify-content: space-around;
+    height: 300px;
+    align-items: flex-end;
+}
+
+.chart-layout_item {
+    background-color: rgb(204, 54, 54);
+    width: 70px;
+    height: var(--percent);
+    animation: growth ease-in 0.5s;
+}
+
+@keyframes growth {
+    from {
+        height: calc(var(--percent) - 50%);
+        opacity: 0;
+    }
+    to {
+        height: var(--percent);
+        opacity: 1;
+    }
+}
+
+
+/* the end */
+
+.the-end {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.the-end_first {
+    background-color: aquamarine;
+    padding: 12px;
+    flex: 1;
+}
+
+.the-end_second {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.the-end_second-item1 {
+    padding: 12px;
+    flex: 1;
+    background-color: rgb(127, 179, 150);
+}
+
+.the-end_second-item2 {
+    padding: 12px;
+    flex: 1;
+    background-color: rgb(180, 180, 130);
+}
